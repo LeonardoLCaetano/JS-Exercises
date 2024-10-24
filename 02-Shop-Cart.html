@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        if(cartQuantity  > 10){
+            cartQuantity++
+            console.log(`Total items on cart: ${cartQuantity}`)
+        } else{
+            console.log('The cart is full!')
+        }
+        ">Add to cart</button>
+    <button onclick="
+     if(cartQuantity < 10){
+            cartQuantity = cartQuantity + 2
+            console.log(`Total items on cart: ${cartQuantity}`)
+        } else{
+            console.log('The cart is full!')
+        }
+    ">Add +2</button>
+
+    <button onclick="
+        if(cartQuantity - 1 > 0){
+            cartQuantity--
+            console.log(`Total items on cart: ${cartQuantity}`)
+        } else{
+            console.log('The cart is full!')
+        }
+    ">Remove from cart</button>
+
+    <button onclick="
+        if(cartQuantity > 0){
+            cartQuantity = cartQuantity - 2
+            console.log(`Total items on cart: ${cartQuantity}`)
+        } else{
+            console.log('The cart is full!')
+        }
+    ">-2</button>
+
+
+    <script src="exercises.js"></script>
+</body>
+</html>
